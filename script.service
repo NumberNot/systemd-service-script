@@ -1,0 +1,5 @@
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=/var/lib/docker/volumes/nginx_data/_data
+ExecStart=wget -O epg.xml.gz https://iptvx.one/epg/epg.xml.gz
